@@ -394,3 +394,56 @@
     color: #d4af37;
     border-bottom-color: #d4af37;
 }
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 1024px) {
+    .cellar-content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cellar-header {
+        padding-top: 100px;
+        padding-bottom: 1rem;
+    }
+
+    .cellar-header h1 {
+        font-size: 2rem;
+    }
+
+    /* Stack controls at bottom */
+    .cellar-controls {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .cellar-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    /* Modal Mobile */
+    .cellar-modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .cellar-modal-content.guide-content {
+        padding: 1.5rem;
+    }
+
+    .oak-comparison {
+        flex-direction: column;
+    }
+
+    /* Collection Grid */
+    .collection-grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2 cols on mobile usually works for cards, or 1 if very small */
+        gap: 1rem;
+    }
+}

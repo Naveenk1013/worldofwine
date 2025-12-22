@@ -64,6 +64,8 @@
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
 }
 
 .nav-step {
@@ -436,4 +438,82 @@
     background: #fff;
     transform: translateY(-2px);
     box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 1024px) {
+    .tasting-container {
+        padding: 1rem;
+    }
+
+    .lab-layout {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tasting-page {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+        /* Enable page scroll on mobile */
+    }
+
+    .tasting-header h1 {
+        font-size: 2rem;
+    }
+
+    .tasting-nav {
+        gap: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .nav-step {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .nav-step span {
+        font-size: 0.7rem;
+    }
+
+    .lab-layout {
+        display: flex;
+        flex-direction: column-reverse;
+        /* Put visual on top if desired, or bottom. Let's stack naturally instructions first. */
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+    }
+
+    /* Reset overflow for mobile columns */
+    .instruction-column {
+        overflow-y: visible;
+        padding: 0;
+    }
+
+    .visual-column {
+        min-height: 400px;
+        order: -1;
+        /* Show visuals at top on mobile */
+    }
+
+    .glass-container {
+        transform: scale(1);
+    }
+
+    .aroma-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Ensure action buttons are touch/thumb friendly */
+    .action-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+    }
+
+    /* Fix overlap with nav */
+    .tasting-header {
+        padding-top: 5rem;
+    }
 }

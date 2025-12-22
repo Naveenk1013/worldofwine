@@ -16,6 +16,7 @@ const Navigation = () => {
         { href: '/tasting', label: 'Tasting' },
         // { href: '/pairing', label: 'Pairing' }, // Maybe too many for pill nav? let's keep them if fits.
         { href: '/cellar', label: 'Cellar' },
+        { href: '/classification', label: 'Classification' },
     ];
 
     return (

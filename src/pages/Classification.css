@@ -1,0 +1,226 @@
+/* Classification.css */
+.classification-page {
+    width: 100vw;
+    height: 100vh;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.iridescence-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+/* --- HERO SECTION --- */
+.classification-hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* Above iridescence (0), below ScrollStack (10) */
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    padding-bottom: 20vh;
+    /* Lift center content slightly */
+}
+
+.classification-hero>* {
+    pointer-events: auto;
+}
+
+.shiny-header {
+    font-size: 4rem;
+    /* Larger hero title */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #d4af37;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-chart {
+    width: 90%;
+    max-width: 900px;
+    background: rgba(10, 10, 10, 0.4);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ScrollStack container */
+.classification-stack {
+    z-index: 10;
+    /* Stack overlays the hero */
+    position: relative;
+}
+
+/* Ensure ScrollStack allows scrolling past the hero */
+.classification-stack .scroll-stack-inner {
+    padding-top: 100vh !important;
+    /* Push the first card down to reveal hero */
+}
+
+/* Text Colors helper */
+h2 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    color: #e0e0e0;
+    margin-top: 1.5rem;
+}
+
+strong {
+    color: #fff;
+}
+
+/* EXPANDED OVERLAY - Modal Style */
+/* Replaces transform-based expansion to fix positioning issues */
+.expanded-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    /* Top level */
+    background: rgba(10, 8, 8, 0.98);
+    /* Solid-ish dark background */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 80px 2rem 2rem;
+    overflow-y: auto;
+    animation: fadeIn 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+}
+
+.expanded-content {
+    width: 100%;
+    max-width: 900px;
+    color: #e0e0e0;
+    padding-bottom: 4rem;
+}
+
+.expanded-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.expanded-content details {
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.expanded-content summary {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Close Icon Button */
+.close-expanded-btn {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10001;
+    /* Above overlay */
+    background: rgba(10, 8, 8, 0.5);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #d4af37;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-expanded-btn:hover {
+    background: rgba(212, 175, 55, 0.2);
+    transform: rotate(90deg);
+    border-color: #d4af37;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .shiny-header {
+        font-size: 2.5rem;
+    }
+
+    .hero-chart {
+        width: 100%;
+        transform: scale(0.95);
+        transform-origin: center top;
+        margin-top: 1rem;
+    }
+
+    .classification-hero {
+        padding-bottom: 30vh;
+        /* Push title up more on mobile */
+    }
+
+    .expanded-content h2 {
+        font-size: 2rem;
+    }
+
+    .expanded-overlay {
+        padding: 80px 1rem 2rem;
+        /* Less side padding */
+    }
+
+    .close-expanded-btn {
+        width: 40px;
+        height: 40px;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+}

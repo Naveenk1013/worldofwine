@@ -14,7 +14,7 @@ const Vineyard = React.lazy(() => import('./pages/Vineyard'));
 const TastingLab = React.lazy(() => import('./pages/TastingLab'));
 const PairingGame = React.lazy(() => import('./pages/PairingGame'));
 const Cellar = React.lazy(() => import('./pages/Cellar'));
-const GrapeGallery = React.lazy(() => import('./pages/GrapeGallery'));
+const Classification = React.lazy(() => import('./pages/Classification'));
 
 function App() {
     return (
@@ -31,7 +31,7 @@ function App() {
 
                     <Route path="/pairing" element={<PairingGame />} />
                     <Route path="/cellar" element={<Cellar />} />
-                    <Route path="/gallery" element={<GrapeGallery />} />
+                    <Route path="/classification" element={<Classification />} />
                 </Routes>
             </Suspense>
             <Footer />

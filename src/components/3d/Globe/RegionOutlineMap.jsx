@@ -53,10 +53,12 @@ const RegionOutlineMap = ({ region, countryGeoJson, stateGeoJson }) => {
 
         const { width, height } = dimensions;
 
-        // Create projection fitted to the feature
+        // Create projection fitted to the feature with padding
         const projection = d3.geoMercator()
-            .fitSize([width * 0.8, height * 0.8], feature) // 20% padding
-            .translate([width / 2, height / 2]);
+            .fitExtent(
+                [[width * 0.1, height * 0.1], [width * 0.9, height * 0.9]],
+                feature
+            );
 
         const pathGenerator = d3.geoPath().projection(projection);
 

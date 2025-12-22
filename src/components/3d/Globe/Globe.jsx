@@ -205,8 +205,65 @@ const GlobeComponent = () => {
         closeModal(); // Zoom out
     };
 
+    // --- Search Logic ---
+    const [searchQuery, setSearchQuery] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
+
+    useEffect(() => {
+        if (!searchQuery.trim()) {
+            setSearchResults([]);
+            return;
+        }
+
+        const query = searchQuery.toLowerCase();
+        const results = wineRegions.filter(region =>
+            (region.name && region.name.toLowerCase().includes(query)) ||
+            (region.country && region.country.toLowerCase().includes(query))
+        ).slice(0, 5);
+
+        setSearchResults(results);
+    }, [searchQuery]);
+
+    const handleSearchSelect = (region) => {
+        const marker = markerData.find(m => m.id === region.id);
+        if (marker) {
+            flyToRegion(marker);
+            setSearchQuery('');
+            setSearchResults([]);
+        }
+    };
+
     return (
         <>
+            {/* Search Bar */}
+            <div className="globe-search-container">
+                <div className="search-input-wrapper">
+                    <span className="search-icon">🔍</span>
+                    <input
+                        type="text"
+                        placeholder="Search regions..."
+                        value={searchQuery}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                    {searchQuery && (
+                        <button className="search-clear" onClick={() => setSearchQuery('')}>✕</button>
+                    )}
+                </div>
+                {searchResults.length > 0 && (
+                    <ul className="search-results-list">
+                        {searchResults.map(result => (
+                            <li key={result.id} onClick={() => handleSearchSelect(result)}>
+                                <span className="result-flag">{result.flag}</span>
+                                <div>
+                                    <span className="result-name">{result.name}</span>
+                                    <small style={{ color: '#aaa', marginLeft: '5px' }}>{result.country}</small>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
+
             <div className={`globe-background ${selectedRegion ? 'dimmed' : ''}`}>
                 <Globe
                     ref={globeEl}
@@ -286,16 +343,16 @@ const GlobeComponent = () => {
                 {!tourActive ? (
                     <div className="tour-selection">
                         <button className="tour-btn old-world" onClick={() => startTour('oldWorld')}>
-                            🏰 Old World Tour
+                            Old World
                         </button>
                         <button className="tour-btn new-world" onClick={() => startTour('newWorld')}>
-                            🚀 New World Tour
+                            New World
                         </button>
                     </div>
                 ) : (
                     <div className="tour-navigation">
                         <span className="tour-status">
-                            {currentTour === 'oldWorld' ? '🏰 Old World' : '🚀 New World'}: Stop {tourIndex + 1}/{tourPaths[currentTour].length}
+                            {currentTour === 'oldWorld' ? 'Old' : 'New'}: Stop {tourIndex + 1}/{tourPaths[currentTour].length}
                         </span>
                         <div className="tour-nav-buttons">
                             <button className="nav-btn" onClick={prevStop} disabled={tourIndex === 0}>⬅ Prev</button>

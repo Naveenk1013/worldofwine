@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="wineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#722F37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A0404;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Glass Bowl -->
+  <path d="M25,20 Q25,65 50,65 Q75,65 75,20 Z" fill="url(#wineGradient)" stroke="#d4af37" stroke-width="2" opacity="0.9"/>
+  
+  <!-- Stem -->
+  <rect x="48" y="65" width="4" height="25" fill="#d4af37" />
+  
+  <!-- Base -->
+  <path d="M35,90 L65,90 C65,90 60,85 50,85 C40,85 35,90 35,90 Z" fill="#d4af37" />
+  
+  <!-- Reflection/Shine -->
+  <path d="M30,25 Q30,50 38,55" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Rim -->
+  <ellipse cx="50" cy="20" rx="25" ry="3" fill="rgba(114, 47, 55, 0.3)" stroke="#d4af37" stroke-width="1" />
+</svg>

@@ -11,8 +11,7 @@ const Globe = () => {
 
       <div className="globe-ui">
         <div className="globe-header">
-          <h1>World of  Wine</h1>
-          <p>Explore wine regions around the globe • Click markers to learn more</p>
+          <h1>World of Wine</h1>
         </div>
 
         <div className="globe-legend">

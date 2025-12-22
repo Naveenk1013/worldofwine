@@ -1,0 +1,224 @@
+.story-container {
+    padding: 0;
+    margin: 0;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    background: #050505;
+}
+
+.story-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.story-section.hero-spacer {
+    height: 100vh;
+    border: none;
+    pointer-events: none;
+}
+
+/* Typography */
+.story-chapter-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #d4af37;
+    /* Gold */
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.story-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.story-subheading {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #ccc;
+    text-align: justify;
+    position: relative;
+    z-index: 2;
+}
+
+.story-content p {
+    margin-bottom: 1.5rem;
+}
+
+.story-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.story-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 2px solid #d4af37;
+    transition: transform 0.3s ease;
+}
+
+.story-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.story-item h4 {
+    color: #d4af37;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* New List Style */
+.story-list-ul {
+    list-style: disc;
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    padding-left: 1rem;
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.story-list-ul li {
+    margin-bottom: 0.5rem;
+}
+
+.story-list-ul li strong {
+    color: #e0e0e0;
+}
+
+/* Interactive Elements Base */
+.interactive-canvas {
+    width: 100%;
+    height: 300px;
+    margin: 3rem 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Prologue Bubbles */
+.bubble-container {
+    position: relative;
+    width: 100px;
+    height: 100%;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: rise 4s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        bottom: -20px;
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 100%;
+        transform: translateX(20px);
+        opacity: 0;
+    }
+}
+
+/* Seasonal Wheel */
+.season-wheel {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    position: relative;
+    animation: rotateWheel 20s linear infinite;
+}
+
+.wheel-segment {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 100px;
+    background: #d4af37;
+    transform-origin: top center;
+}
+
+@keyframes rotateWheel {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Temperature Scale */
+.temp-slider {
+    width: 80%;
+    height: 10px;
+    background: linear-gradient(to right, #4a90e2, #e74c3c);
+    border-radius: 5px;
+    position: relative;
+}
+
+.temp-cursor {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Just static visual for now or animated via JS */
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .story-chapter-title {
+        font-size: 2rem;
+    }
+
+    .story-heading {
+        font-size: 1.8rem;
+    }
+}

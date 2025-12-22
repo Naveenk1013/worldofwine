@@ -1,0 +1,1301 @@
+[
+    {
+        "id": "cabernet-sauvignon",
+        "name": "Cabernet Sauvignon",
+        "type": "Red",
+        "origin": "France (Bordeaux)",
+        "profile": "Blackcurrant, plum, cedar, high tannin",
+        "links": [
+            "merlot",
+            "cabernet-franc",
+            "sauvignon-blanc"
+        ]
+    },
+    {
+        "id": "merlot",
+        "name": "Merlot",
+        "type": "Red",
+        "origin": "France (Bordeaux)",
+        "profile": "Plum, cherry, chocolate, soft tannins",
+        "links": [
+            "cabernet-sauvignon",
+            "cabernet-franc"
+        ]
+    },
+    {
+        "id": "cabernet-franc",
+        "name": "Cabernet Franc",
+        "type": "Red",
+        "origin": "France (Loire)",
+        "profile": "Red berries, herbs, pepper",
+        "links": [
+            "cabernet-sauvignon",
+            "merlot"
+        ]
+    },
+    {
+        "id": "pinot-noir",
+        "name": "Pinot Noir",
+        "type": "Red",
+        "origin": "France (Burgundy)",
+        "profile": "Cherry, raspberry, earthy notes",
+        "links": [
+            "chardonnay",
+            "gamay"
+        ]
+    },
+    {
+        "id": "syrah",
+        "name": "Syrah",
+        "type": "Red",
+        "origin": "France (Rhône)",
+        "profile": "Blackberry, pepper, smoke",
+        "links": [
+            "grenache",
+            "mourvedre",
+            "viognier"
+        ]
+    },
+    {
+        "id": "grenache",
+        "name": "Grenache",
+        "type": "Red",
+        "origin": "France (Southern Rhône)",
+        "profile": "Strawberry, spice, warmth",
+        "links": [
+            "syrah",
+            "mourvedre"
+        ]
+    },
+    {
+        "id": "mourvedre",
+        "name": "Mourvèdre",
+        "type": "Red",
+        "origin": "France (Provence)",
+        "profile": "Dark fruit, gamey, earthy",
+        "links": [
+            "grenache",
+            "syrah"
+        ]
+    },
+    {
+        "id": "gamay",
+        "name": "Gamay",
+        "type": "Red",
+        "origin": "France (Beaujolais)",
+        "profile": "Red fruit, floral, light body",
+        "links": [
+            "pinot-noir"
+        ]
+    },
+    {
+        "id": "malbec",
+        "name": "Malbec",
+        "type": "Red",
+        "origin": "France (Cahors)",
+        "profile": "Black plum, cocoa, bold structure",
+        "links": [
+            "merlot"
+        ]
+    },
+    {
+        "id": "cinsault",
+        "name": "Cinsault",
+        "type": "Red",
+        "origin": "France (Languedoc)",
+        "profile": "Light red fruit, floral",
+        "links": [
+            "grenache",
+            "carignan"
+        ]
+    },
+    {
+        "id": "chardonnay",
+        "name": "Chardonnay",
+        "type": "White",
+        "origin": "France (Burgundy)",
+        "profile": "Apple, citrus, butter when oaked",
+        "links": [
+            "pinot-noir"
+        ]
+    },
+    {
+        "id": "sauvignon-blanc",
+        "name": "Sauvignon Blanc",
+        "type": "White",
+        "origin": "France (Loire)",
+        "profile": "Citrus, grass, high acidity",
+        "links": [
+            "semillon",
+            "cabernet-sauvignon"
+        ]
+    },
+    {
+        "id": "chenin-blanc",
+        "name": "Chenin Blanc",
+        "type": "White",
+        "origin": "France (Loire)",
+        "profile": "Apple, honey, floral",
+        "links": [
+            "sauvignon-blanc"
+        ]
+    },
+    {
+        "id": "viognier",
+        "name": "Viognier",
+        "type": "White",
+        "origin": "France (Rhône)",
+        "profile": "Peach, apricot, floral",
+        "links": [
+            "syrah"
+        ]
+    },
+    {
+        "id": "semillon",
+        "name": "Sémillon",
+        "type": "White",
+        "origin": "France (Bordeaux)",
+        "profile": "Honey, fig, waxy texture",
+        "links": [
+            "sauvignon-blanc"
+        ]
+    },
+    {
+        "id": "gewurztraminer",
+        "name": "Gewürztraminer",
+        "type": "White",
+        "origin": "France (Alsace)",
+        "profile": "Lychee, rose, spice",
+        "links": [
+            "riesling"
+        ]
+    },
+    {
+        "id": "riesling",
+        "name": "Riesling",
+        "type": "White",
+        "origin": "France/Germany",
+        "profile": "Citrus, green apple, high acidity",
+        "links": [
+            "gewurztraminer"
+        ]
+    },
+    {
+        "id": "melon-de-bourgogne",
+        "name": "Melon de Bourgogne",
+        "type": "White",
+        "origin": "France (Loire)",
+        "profile": "Lemon, mineral, crisp",
+        "links": []
+    },
+    {
+        "id": "sangiovese",
+        "name": "Sangiovese",
+        "type": "Red",
+        "origin": "Italy (Tuscany)",
+        "profile": "Cherry, tomato leaf, high acidity",
+        "links": [
+            "nebbiolo",
+            "barbera"
+        ]
+    },
+    {
+        "id": "nebbiolo",
+        "name": "Nebbiolo",
+        "type": "Red",
+        "origin": "Italy (Piedmont)",
+        "profile": "Rose, tar, high tannin",
+        "links": [
+            "barbera",
+            "sangiovese"
+        ]
+    },
+    {
+        "id": "barbera",
+        "name": "Barbera",
+        "type": "Red",
+        "origin": "Italy (Piedmont)",
+        "profile": "Red fruit, low tannin, high acid",
+        "links": [
+            "nebbiolo"
+        ]
+    },
+    {
+        "id": "montepulciano",
+        "name": "Montepulciano",
+        "type": "Red",
+        "origin": "Italy (Abruzzo)",
+        "profile": "Plum, spice, medium body",
+        "links": [
+            "sangiovese"
+        ]
+    },
+    {
+        "id": "nero-d-avola",
+        "name": "Nero d’Avola",
+        "type": "Red",
+        "origin": "Italy (Sicily)",
+        "profile": "Black fruit, licorice",
+        "links": [
+            "syrah"
+        ]
+    },
+    {
+        "id": "primitivo",
+        "name": "Primitivo",
+        "type": "Red",
+        "origin": "Italy (Puglia)",
+        "profile": "Jammy fruit, spice",
+        "links": [
+            "zinfandel"
+        ]
+    },
+    {
+        "id": "aglianico",
+        "name": "Aglianico",
+        "type": "Red",
+        "origin": "Italy (Campania)",
+        "profile": "Dark fruit, leather, tannic",
+        "links": []
+    },
+    {
+        "id": "pinot-grigio",
+        "name": "Pinot Grigio",
+        "type": "White",
+        "origin": "Italy (Veneto)",
+        "profile": "Pear, citrus, light body",
+        "links": [
+            "pinot-noir"
+        ]
+    },
+    {
+        "id": "verdicchio",
+        "name": "Verdicchio",
+        "type": "White",
+        "origin": "Italy (Marche)",
+        "profile": "Lemon, almond, mineral",
+        "links": []
+    },
+    {
+        "id": "garganega",
+        "name": "Garganega",
+        "type": "White",
+        "origin": "Italy (Soave)",
+        "profile": "Stone fruit, floral",
+        "links": []
+    },
+    {
+        "id": "fiano",
+        "name": "Fiano",
+        "type": "White",
+        "origin": "Italy (Campania)",
+        "profile": "Honey, pear, nutty",
+        "links": []
+    },
+    {
+        "id": "tempranillo",
+        "name": "Tempranillo",
+        "type": "Red",
+        "origin": "Spain (Rioja)",
+        "profile": "Cherry, leather, vanilla",
+        "links": [
+            "garnacha"
+        ]
+    },
+    {
+        "id": "garnacha",
+        "name": "Garnacha",
+        "type": "Red",
+        "origin": "Spain",
+        "profile": "Red berries, spice",
+        "links": [
+            "tempranillo",
+            "monastrell"
+        ]
+    },
+    {
+        "id": "monastrell",
+        "name": "Monastrell",
+        "type": "Red",
+        "origin": "Spain",
+        "profile": "Dark fruit, earthy",
+        "links": [
+            "garnacha"
+        ]
+    },
+    {
+        "id": "mencia",
+        "name": "Mencía",
+        "type": "Red",
+        "origin": "Spain (Bierzo)",
+        "profile": "Red fruit, floral",
+        "links": []
+    },
+    {
+        "id": "albarino",
+        "name": "Albariño",
+        "type": "White",
+        "origin": "Spain (Rías Baixas)",
+        "profile": "Peach, citrus, saline",
+        "links": []
+    },
+    {
+        "id": "verdejo",
+        "name": "Verdejo",
+        "type": "White",
+        "origin": "Spain (Rueda)",
+        "profile": "Herbal, citrus",
+        "links": [
+            "sauvignon-blanc"
+        ]
+    },
+    {
+        "id": "godello",
+        "name": "Godello",
+        "type": "White",
+        "origin": "Spain (Galicia)",
+        "profile": "Apple, mineral",
+        "links": []
+    },
+    {
+        "id": "gruner-veltliner",
+        "name": "Grüner Veltliner",
+        "type": "White",
+        "origin": "Austria",
+        "profile": "White pepper, citrus",
+        "links": []
+    },
+    {
+        "id": "silvaner",
+        "name": "Silvaner",
+        "type": "White",
+        "origin": "Germany",
+        "profile": "Herbal, subtle fruit",
+        "links": []
+    },
+    {
+        "id": "spatburgunder",
+        "name": "Spätburgunder",
+        "type": "Red",
+        "origin": "Germany",
+        "profile": "Cherry, earthy",
+        "links": [
+            "pinot-noir"
+        ]
+    },
+    {
+        "id": "zinfandel",
+        "name": "Zinfandel",
+        "type": "Red",
+        "origin": "USA (California)",
+        "profile": "Blackberry, jam, pepper, high alcohol",
+        "links": [
+            "primitivo",
+            "petite-sirah"
+        ]
+    },
+    {
+        "id": "petite-sirah",
+        "name": "Petite Sirah",
+        "type": "Red",
+        "origin": "USA (California)",
+        "profile": "Dark fruit, smoky, very tannic",
+        "links": [
+            "zinfandel",
+            "syrah"
+        ]
+    },
+    {
+        "id": "ruby-cabernet",
+        "name": "Ruby Cabernet",
+        "type": "Red",
+        "origin": "USA (California)",
+        "profile": "Plum, cherry, medium body",
+        "links": [
+            "cabernet-sauvignon",
+            "carignan"
+        ]
+    },
+    {
+        "id": "mission",
+        "name": "Mission",
+        "type": "Red",
+        "origin": "USA (California)",
+        "profile": "Light red fruit, rustic",
+        "links": [
+            "pais"
+        ]
+    },
+    {
+        "id": "colombard",
+        "name": "Colombard",
+        "type": "White",
+        "origin": "USA (California)",
+        "profile": "Citrus, crisp acidity",
+        "links": [
+            "chenin-blanc"
+        ]
+    },
+    {
+        "id": "chenin-blanc-california",
+        "name": "Chenin Blanc (California)",
+        "type": "White",
+        "origin": "USA (California)",
+        "profile": "Apple, melon, soft acidity",
+        "links": [
+            "chenin-blanc"
+        ]
+    },
+    {
+        "id": "malbec-argentina",
+        "name": "Malbec (Argentina)",
+        "type": "Red",
+        "origin": "Argentina (Mendoza)",
+        "profile": "Black plum, violet, rich texture",
+        "links": [
+            "malbec"
+        ]
+    },
+    {
+        "id": "bonarda",
+        "name": "Bonarda",
+        "type": "Red",
+        "origin": "Argentina",
+        "profile": "Red fruit, spice, medium body",
+        "links": []
+    },
+    {
+        "id": "torrontes",
+        "name": "Torrontés",
+        "type": "White",
+        "origin": "Argentina",
+        "profile": "Floral, peach, aromatic",
+        "links": [
+            "muscat-of-alexandria"
+        ]
+    },
+    {
+        "id": "carmenere",
+        "name": "Carmenère",
+        "type": "Red",
+        "origin": "Chile",
+        "profile": "Green pepper, plum, soft tannins",
+        "links": [
+            "merlot",
+            "cabernet-franc"
+        ]
+    },
+    {
+        "id": "pais",
+        "name": "País",
+        "type": "Red",
+        "origin": "Chile",
+        "profile": "Red berries, earthy",
+        "links": [
+            "mission"
+        ]
+    },
+    {
+        "id": "moscatel-de-alejandria",
+        "name": "Moscatel de Alejandría",
+        "type": "White",
+        "origin": "Chile",
+        "profile": "Grapey, floral",
+        "links": [
+            "muscat-of-alexandria"
+        ]
+    },
+    {
+        "id": "shiraz",
+        "name": "Shiraz",
+        "type": "Red",
+        "origin": "Australia",
+        "profile": "Blackberry, chocolate, spice",
+        "links": [
+            "syrah"
+        ]
+    },
+    {
+        "id": "grenache-australia",
+        "name": "Grenache (Australia)",
+        "type": "Red",
+        "origin": "Australia",
+        "profile": "Red fruit, warmth",
+        "links": [
+            "grenache"
+        ]
+    },
+    {
+        "id": "mataro",
+        "name": "Mataro",
+        "type": "Red",
+        "origin": "Australia",
+        "profile": "Savory, earthy, structured",
+        "links": [
+            "mourvedre"
+        ]
+    },
+    {
+        "id": "durif",
+        "name": "Durif",
+        "type": "Red",
+        "origin": "Australia",
+        "profile": "Ink-dark, tannic, powerful",
+        "links": [
+            "petite-sirah"
+        ]
+    },
+    {
+        "id": "semillon-australia",
+        "name": "Semillon (Australia)",
+        "type": "White",
+        "origin": "Australia (Hunter Valley)",
+        "profile": "Lemon, toast, aging potential",
+        "links": [
+            "semillon"
+        ]
+    },
+    {
+        "id": "verdelho",
+        "name": "Verdelho",
+        "type": "White",
+        "origin": "Australia",
+        "profile": "Tropical fruit, fresh acidity",
+        "links": []
+    },
+    {
+        "id": "pinotage",
+        "name": "Pinotage",
+        "type": "Red",
+        "origin": "South Africa",
+        "profile": "Dark fruit, smoky, earthy",
+        "links": [
+            "pinot-noir",
+            "cinsault"
+        ]
+    },
+    {
+        "id": "cinsault-south-africa",
+        "name": "Cinsault (South Africa)",
+        "type": "Red",
+        "origin": "South Africa",
+        "profile": "Red berries, floral",
+        "links": [
+            "cinsault"
+        ]
+    },
+    {
+        "id": "chenin-blanc-south-africa",
+        "name": "Chenin Blanc (South Africa)",
+        "type": "White",
+        "origin": "South Africa",
+        "profile": "Apple, honey, mineral",
+        "links": [
+            "chenin-blanc"
+        ]
+    },
+    {
+        "id": "colombard-south-africa",
+        "name": "Colombard (South Africa)",
+        "type": "White",
+        "origin": "South Africa",
+        "profile": "Fresh citrus, light body",
+        "links": [
+            "colombard"
+        ]
+    },
+    {
+        "id": "pinot-noir-new-zealand",
+        "name": "Pinot Noir (New Zealand)",
+        "type": "Red",
+        "origin": "New Zealand (Central Otago)",
+        "profile": "Cherry, spice, vibrant acidity",
+        "links": [
+            "pinot-noir"
+        ]
+    },
+    {
+        "id": "syrah-new-zealand",
+        "name": "Syrah (New Zealand)",
+        "type": "Red",
+        "origin": "New Zealand (Hawke’s Bay)",
+        "profile": "Pepper, dark fruit",
+        "links": [
+            "syrah"
+        ]
+    },
+    {
+        "id": "sauvignon-blanc-new-zealand",
+        "name": "Sauvignon Blanc (New Zealand)",
+        "type": "White",
+        "origin": "New Zealand (Marlborough)",
+        "profile": "Gooseberry, passionfruit, crisp",
+        "links": [
+            "sauvignon-blanc"
+        ]
+    },
+    {
+        "id": "chardonnay-new-zealand",
+        "name": "Chardonnay (New Zealand)",
+        "type": "White",
+        "origin": "New Zealand",
+        "profile": "Stone fruit, balanced oak",
+        "links": [
+            "chardonnay"
+        ]
+    },
+    {
+        "id": "muscat-of-alexandria",
+        "name": "Muscat of Alexandria",
+        "type": "White",
+        "origin": "Global",
+        "profile": "Grapey, floral, sweet aromas",
+        "links": [
+            "moscatel-de-alejandria"
+        ]
+    },
+    {
+        "id": "pedro-ximenez",
+        "name": "Pedro Ximénez",
+        "type": "White",
+        "origin": "Spain / Global",
+        "profile": "Raisin, fig, syrupy",
+        "links": []
+    },
+    {
+        "id": "carignan",
+        "name": "Carignan",
+        "type": "Red",
+        "origin": "Global",
+        "profile": "Rustic fruit, high acidity",
+        "links": [
+            "ruby-cabernet",
+            "cinsault"
+        ]
+    },
+    {
+        "id": "alicante-bouschet",
+        "name": "Alicante Bouschet",
+        "type": "Red",
+        "origin": "Global",
+        "profile": "Deep color, dark fruit",
+        "links": []
+    },
+    {
+        "id": "touriga-nacional",
+        "name": "Touriga Nacional",
+        "type": "Red",
+        "origin": "Portugal (Douro)",
+        "profile": "Dark berries, violet, powerful structure",
+        "links": [
+            "touriga-franca"
+        ]
+    },
+    {
+        "id": "touriga-franca",
+        "name": "Touriga Franca",
+        "type": "Red",
+        "origin": "Portugal (Douro)",
+        "profile": "Floral, red fruit, smooth tannins",
+        "links": [
+            "touriga-nacional"
+        ]
+    },
+    {
+        "id": "tinta-roriz",
+        "name": "Tinta Roriz",
+        "type": "Red",
+        "origin": "Portugal (Douro)",
+        "profile": "Cherry, spice, firm tannin",
+        "links": [
+            "tempranillo"
+        ]
+    },
+    {
+        "id": "tinta-barroca",
+        "name": "Tinta Barroca",
+        "type": "Red",
+        "origin": "Portugal (Douro)",
+        "profile": "Ripe fruit, soft texture",
+        "links": []
+    },
+    {
+        "id": "baga",
+        "name": "Baga",
+        "type": "Red",
+        "origin": "Portugal (Bairrada)",
+        "profile": "Red berries, high acidity, tannic",
+        "links": []
+    },
+    {
+        "id": "castelao",
+        "name": "Castelão",
+        "type": "Red",
+        "origin": "Portugal",
+        "profile": "Strawberry, earthy, rustic",
+        "links": []
+    },
+    {
+        "id": "alvarinho",
+        "name": "Alvarinho",
+        "type": "White",
+        "origin": "Portugal (Vinho Verde)",
+        "profile": "Peach, citrus, mineral",
+        "links": [
+            "albarino"
+        ]
+    },
+    {
+        "id": "loureiro",
+        "name": "Loureiro",
+        "type": "White",
+        "origin": "Portugal (Vinho Verde)",
+        "profile": "Floral, lime, fresh acidity",
+        "links": []
+    },
+    {
+        "id": "encruzado",
+        "name": "Encruzado",
+        "type": "White",
+        "origin": "Portugal (Dão)",
+        "profile": "Pear, mineral, elegant",
+        "links": []
+    },
+    {
+        "id": "arinto",
+        "name": "Arinto",
+        "type": "White",
+        "origin": "Portugal",
+        "profile": "Lemon, high acidity",
+        "links": []
+    },
+    {
+        "id": "agiorgitiko",
+        "name": "Agiorgitiko",
+        "type": "Red",
+        "origin": "Greece (Nemea)",
+        "profile": "Red fruit, spice, medium body",
+        "links": []
+    },
+    {
+        "id": "xinomavro",
+        "name": "Xinomavro",
+        "type": "Red",
+        "origin": "Greece (Naoussa)",
+        "profile": "Tomato, olive, high tannin",
+        "links": [
+            "nebbiolo"
+        ]
+    },
+    {
+        "id": "mavrodaphne",
+        "name": "Mavrodaphne",
+        "type": "Red",
+        "origin": "Greece",
+        "profile": "Dark fruit, herbal",
+        "links": []
+    },
+    {
+        "id": "limnio",
+        "name": "Limnio",
+        "type": "Red",
+        "origin": "Greece (Lemnos)",
+        "profile": "Earthy, dried herbs",
+        "links": []
+    },
+    {
+        "id": "assyrtiko",
+        "name": "Assyrtiko",
+        "type": "White",
+        "origin": "Greece (Santorini)",
+        "profile": "Citrus, saline, volcanic minerality",
+        "links": []
+    },
+    {
+        "id": "moschofilero",
+        "name": "Moschofilero",
+        "type": "White",
+        "origin": "Greece",
+        "profile": "Rose petal, citrus",
+        "links": [
+            "gewurztraminer",
+            "muscat-of-alexandria"
+        ]
+    },
+    {
+        "id": "roditis",
+        "name": "Roditis",
+        "type": "White",
+        "origin": "Greece",
+        "profile": "Apple, fresh acidity",
+        "links": []
+    },
+    {
+        "id": "furmint",
+        "name": "Furmint",
+        "type": "White",
+        "origin": "Hungary (Tokaj)",
+        "profile": "Apple, honey, high acidity",
+        "links": []
+    },
+    {
+        "id": "harslevelu",
+        "name": "Hárslevelű",
+        "type": "White",
+        "origin": "Hungary",
+        "profile": "Floral, pear",
+        "links": [
+            "furmint"
+        ]
+    },
+    {
+        "id": "kadarka",
+        "name": "Kadarka",
+        "type": "Red",
+        "origin": "Hungary",
+        "profile": "Light red fruit, spice",
+        "links": []
+    },
+    {
+        "id": "feteasca-neagra",
+        "name": "Fetească Neagră",
+        "type": "Red",
+        "origin": "Romania",
+        "profile": "Plum, spice, medium body",
+        "links": []
+    },
+    {
+        "id": "feteasca-alba",
+        "name": "Fetească Albă",
+        "type": "White",
+        "origin": "Romania",
+        "profile": "Apple, floral",
+        "links": []
+    },
+    {
+        "id": "feteasca-regala",
+        "name": "Fetească Regală",
+        "type": "White",
+        "origin": "Romania",
+        "profile": "Citrus, fresh acidity",
+        "links": []
+    },
+    {
+        "id": "mavrud",
+        "name": "Mavrud",
+        "type": "Red",
+        "origin": "Bulgaria",
+        "profile": "Dark cherry, spice",
+        "links": []
+    },
+    {
+        "id": "gamza",
+        "name": "Gamza",
+        "type": "Red",
+        "origin": "Bulgaria",
+        "profile": "Red berries, light body",
+        "links": [
+            "kadarka"
+        ]
+    },
+    {
+        "id": "saperavi",
+        "name": "Saperavi",
+        "type": "Red",
+        "origin": "Georgia",
+        "profile": "Black fruit, high acidity, tannic",
+        "links": []
+    },
+    {
+        "id": "rkatsiteli",
+        "name": "Rkatsiteli",
+        "type": "White",
+        "origin": "Georgia",
+        "profile": "Apple, quince, structured",
+        "links": []
+    },
+    {
+        "id": "mtsvane",
+        "name": "Mtsvane",
+        "type": "White",
+        "origin": "Georgia",
+        "profile": "Herbal, floral",
+        "links": [
+            "rkatsiteli"
+        ]
+    },
+    {
+        "id": "areni",
+        "name": "Areni",
+        "type": "Red",
+        "origin": "Armenia",
+        "profile": "Red cherry, spice, fresh acidity",
+        "links": [
+            "pinot-noir"
+        ]
+    },
+    {
+        "id": "voskehat",
+        "name": "Voskehat",
+        "type": "White",
+        "origin": "Armenia",
+        "profile": "Stone fruit, floral",
+        "links": []
+    },
+    {
+        "id": "plavac-mali",
+        "name": "Plavac Mali",
+        "type": "Red",
+        "origin": "Croatia",
+        "profile": "Dark fruit, Mediterranean herbs",
+        "links": [
+            "zinfandel"
+        ]
+    },
+    {
+        "id": "grasevina",
+        "name": "Grasevina",
+        "type": "White",
+        "origin": "Croatia",
+        "profile": "Apple, light spice",
+        "links": []
+    },
+    {
+        "id": "vranac",
+        "name": "Vranac",
+        "type": "Red",
+        "origin": "Montenegro",
+        "profile": "Blackberry, chocolate",
+        "links": [
+            "zinfandel",
+            "plavac-mali"
+        ]
+    },
+    {
+        "id": "krstac",
+        "name": "Krstač",
+        "type": "White",
+        "origin": "Montenegro",
+        "profile": "Citrus, floral",
+        "links": []
+    },
+    {
+        "id": "grenache-blanc",
+        "name": "Grenache Blanc",
+        "type": "White",
+        "origin": "France / Spain",
+        "profile": "Pear, apple, medium acidity",
+        "links": [
+            "grenache",
+            "marsanne",
+            "roussanne"
+        ]
+    },
+    {
+        "id": "picpoul",
+        "name": "Picpoul",
+        "type": "White",
+        "origin": "France (Languedoc)",
+        "profile": "Lemon, saline, high acidity",
+        "links": []
+    },
+    {
+        "id": "clairette",
+        "name": "Clairette",
+        "type": "White",
+        "origin": "France",
+        "profile": "Floral, herbal",
+        "links": []
+    },
+    {
+        "id": "marsanne",
+        "name": "Marsanne",
+        "type": "White",
+        "origin": "France (Rhône)",
+        "profile": "Pear, almond, full-bodied",
+        "links": [
+            "roussanne",
+            "viognier"
+        ]
+    },
+    {
+        "id": "roussanne",
+        "name": "Roussanne",
+        "type": "White",
+        "origin": "France (Rhône)",
+        "profile": "Herbal, honeyed",
+        "links": [
+            "marsanne"
+        ]
+    },
+    {
+        "id": "counoise",
+        "name": "Counoise",
+        "type": "Red",
+        "origin": "France",
+        "profile": "Red fruit, spice, light body",
+        "links": [
+            "grenache",
+            "syrah"
+        ]
+    },
+    {
+        "id": "terret-noir",
+        "name": "Terret Noir",
+        "type": "Red",
+        "origin": "France",
+        "profile": "Rustic red fruit",
+        "links": []
+    },
+    {
+        "id": "listan-negro",
+        "name": "Listán Negro",
+        "type": "Red",
+        "origin": "Canary Islands",
+        "profile": "Volcanic minerality, red fruit",
+        "links": []
+    },
+    {
+        "id": "listan-blanco",
+        "name": "Listán Blanco",
+        "type": "White",
+        "origin": "Canary Islands",
+        "profile": "Citrus, mineral",
+        "links": [
+            "palomino"
+        ]
+    },
+    {
+        "id": "nerello-mascalese",
+        "name": "Nerello Mascalese",
+        "type": "Red",
+        "origin": "Italy (Etna)",
+        "profile": "Red cherry, ash, high acidity",
+        "links": [
+            "pinot-noir",
+            "nebbiolo"
+        ]
+    },
+    {
+        "id": "nerello-cappuccio",
+        "name": "Nerello Cappuccio",
+        "type": "Red",
+        "origin": "Italy (Etna)",
+        "profile": "Soft red fruit, spice",
+        "links": [
+            "nerello-mascalese"
+        ]
+    },
+    {
+        "id": "greco",
+        "name": "Greco",
+        "type": "White",
+        "origin": "Italy (Campania)",
+        "profile": "Apple, mineral, structured",
+        "links": [
+            "fiano"
+        ]
+    },
+    {
+        "id": "catarratto",
+        "name": "Catarratto",
+        "type": "White",
+        "origin": "Italy (Sicily)",
+        "profile": "Citrus, fresh",
+        "links": []
+    },
+    {
+        "id": "inzolia",
+        "name": "Inzolia",
+        "type": "White",
+        "origin": "Italy (Sicily)",
+        "profile": "Almond, citrus",
+        "links": [
+            "catarratto"
+        ]
+    },
+    {
+        "id": "areni-noir",
+        "name": "Areni Noir",
+        "type": "Red",
+        "origin": "Armenia",
+        "profile": "Cranberry, spice, fresh acidity",
+        "links": [
+            "areni"
+        ]
+    },
+    {
+        "id": "khndoghni",
+        "name": "Khndoghni",
+        "type": "Red",
+        "origin": "Armenia",
+        "profile": "Dark berry, herbal",
+        "links": []
+    },
+    {
+        "id": "obeidi",
+        "name": "Obeidi",
+        "type": "White",
+        "origin": "Lebanon",
+        "profile": "Apple, floral",
+        "links": []
+    },
+    {
+        "id": "merwah",
+        "name": "Merwah",
+        "type": "White",
+        "origin": "Lebanon",
+        "profile": "Citrus, herbal",
+        "links": [
+            "semillon"
+        ]
+    },
+    {
+        "id": "bastardo",
+        "name": "Bastardo",
+        "type": "Red",
+        "origin": "Portugal / Madeira",
+        "profile": "Red fruit, spice",
+        "links": []
+    },
+    {
+        "id": "sercial",
+        "name": "Sercial",
+        "type": "White",
+        "origin": "Madeira",
+        "profile": "High acidity, citrus",
+        "links": []
+    },
+    {
+        "id": "bual",
+        "name": "Bual",
+        "type": "White",
+        "origin": "Madeira",
+        "profile": "Nutty, caramelized fruit",
+        "links": [
+            "malvasia"
+        ]
+    },
+    {
+        "id": "malvasia",
+        "name": "Malvasia",
+        "type": "White",
+        "origin": "Mediterranean",
+        "profile": "Honeyed, floral",
+        "links": []
+    },
+    {
+        "id": "zibibbo",
+        "name": "Zibibbo",
+        "type": "White",
+        "origin": "Italy (Pantelleria)",
+        "profile": "Orange blossom, grape",
+        "links": [
+            "muscat-of-alexandria"
+        ]
+    },
+    {
+        "id": "grillo",
+        "name": "Grillo",
+        "type": "White",
+        "origin": "Italy (Sicily)",
+        "profile": "Citrus, saline",
+        "links": [
+            "catarratto",
+            "inzolia"
+        ]
+    },
+    {
+        "id": "carignano-del-sulcis",
+        "name": "Carignano del Sulcis",
+        "type": "Red",
+        "origin": "Italy (Sardinia)",
+        "profile": "Dark fruit, Mediterranean herbs",
+        "links": [
+            "carignan"
+        ]
+    },
+    {
+        "id": "cannonau",
+        "name": "Cannonau",
+        "type": "Red",
+        "origin": "Italy (Sardinia)",
+        "profile": "Red berries, spice",
+        "links": [
+            "grenache",
+            "garnacha"
+        ]
+    },
+    {
+        "id": "asswad-karech",
+        "name": "Asswad Karech",
+        "type": "Red",
+        "origin": "Israel",
+        "profile": "Dark fruit, spice",
+        "links": []
+    },
+    {
+        "id": "marawi",
+        "name": "Marawi",
+        "type": "White",
+        "origin": "Israel",
+        "profile": "Pear, citrus",
+        "links": []
+    },
+    {
+        "id": "muscat-blanc",
+        "name": "Muscat Blanc à Petits Grains",
+        "type": "White",
+        "origin": "Global",
+        "profile": "Grapey, floral, aromatic",
+        "links": [
+            "muscat-of-alexandria"
+        ]
+    },
+    {
+        "id": "orange-muscat",
+        "name": "Orange Muscat",
+        "type": "White",
+        "origin": "Global",
+        "profile": "Orange blossom, citrus",
+        "links": [
+            "muscat-blanc"
+        ]
+    },
+    {
+        "id": "palomino",
+        "name": "Palomino",
+        "type": "White",
+        "origin": "Spain (Andalusia)",
+        "profile": "Neutral, saline",
+        "links": []
+    },
+    {
+        "id": "airen",
+        "name": "Airén",
+        "type": "White",
+        "origin": "Spain",
+        "profile": "Light, subtle fruit",
+        "links": []
+    },
+    {
+        "id": "treixadura",
+        "name": "Treixadura",
+        "type": "White",
+        "origin": "Spain (Galicia)",
+        "profile": "Apple, floral",
+        "links": [
+            "albarino",
+            "godello",
+            "loureiro"
+        ]
+    },
+    {
+        "id": "caino-tinto",
+        "name": "Caiño Tinto",
+        "type": "Red",
+        "origin": "Spain (Galicia)",
+        "profile": "Red fruit, spice",
+        "links": []
+    }
+]

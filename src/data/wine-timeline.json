@@ -1,0 +1,122 @@
+[
+    {
+        "id": "ancient_origins",
+        "year": "6000 BC",
+        "era": "Ancient Origins",
+        "title": "The Birth of Winemaking",
+        "description": "Archaeological evidence suggests wine production began in the Caucasus region (modern-day Georgia), where ancient civilizations fermented wild grapes in clay vessels.",
+        "icon": "🏺",
+        "color": "#8B4513",
+        "position": 0
+    },
+    {
+        "id": "mesopotamia",
+        "year": "3000 BC",
+        "era": "Ancient Civilizations",
+        "title": "Mesopotamian Wine Trade",
+        "description": "Wine becomes a commodity in Mesopotamia. The Code of Hammurabi includes laws regulating wine sales and quality standards.",
+        "icon": "📜",
+        "color": "#CD853F",
+        "position": 1
+    },
+    {
+        "id": "egypt",
+        "year": "2500 BC",
+        "era": "Ancient Egypt",
+        "title": "Wine of the Pharaohs",
+        "description": "Ancient Egyptians perfect wine storage in amphorae and create the first wine labels, marking vintage and vineyard. Wine becomes essential in religious ceremonies.",
+        "icon": "⚱️",
+        "color": "#DAA520",
+        "position": 2
+    },
+    {
+        "id": "greece",
+        "year": "800 BC",
+        "era": "Classical Greece",
+        "title": "Greek Wine Culture",
+        "description": "Greeks spread viticulture across Mediterranean. Symposiums elevate wine to philosophical importance. Development of different grape varieties begins.",
+        "icon": "🏛️",
+        "color": "#4169E1",
+        "position": 3
+    },
+    {
+        "id": "rome",
+        "year": "200 BC",
+        "era": "Roman Empire",
+        "title": "Roman Innovation",
+        "description": "Romans revolutionize winemaking with wooden barrels, glass bottles, and widespread viticulture across Europe. Wine becomes daily sustenance for all classes.",
+        "icon": "🏛️",
+        "color": "#8B0000",
+        "position": 4
+    },
+    {
+        "id": "medieval",
+        "year": "1100 AD",
+        "era": "Medieval Period",
+        "title": "Monastic Winemaking",
+        "description": "Monks perfect winemaking techniques in Burgundy and Champagne. Development of terroir concept. Wine becomes essential for communion.",
+        "icon": "⛪",
+        "color": "#722F37",
+        "position": 5
+    },
+    {
+        "id": "renaissance",
+        "year": "1500 AD",
+        "era": "Renaissance",
+        "title": "Age of Exploration",
+        "description": "European explorers bring vines to the New World. Spanish and Portuguese establish vineyards in Americas. Wine trade expands globally.",
+        "icon": "🌍",
+        "color": "#FFD700",
+        "position": 6
+    },
+    {
+        "id": "champagne",
+        "year": "1668 AD",
+        "era": "Innovation Era",
+        "title": "Birth of Champagne",
+        "description": "Dom Pérignon perfects the méthode champenoise, creating sparkling wine. Revolution in bottling and cork technology.",
+        "icon": "🍾",
+        "color": "#F0E68C",
+        "position": 7
+    },
+    {
+        "id": "classification",
+        "year": "1855 AD",
+        "era": "Modern Era",
+        "title": "Bordeaux Classification",
+        "description": "The famous 1855 Classification of Bordeaux wines establishes the crus system, still influential today.",
+        "icon": "🏆",
+        "color": "#722F37",
+        "position": 8
+    },
+    {
+        "id": "phylloxera",
+        "year": "1863 AD",
+        "era": "Crisis & Recovery",
+        "title": "The Great Phylloxera",
+        "description": "Phylloxera devastates European vineyards. American rootstocks save the industry through grafting, reshaping global viticulture.",
+        "icon": "🪲",
+        "color": "#8B4513",
+        "position": 9
+    },
+    {
+        "id": "new_world",
+        "year": "1976 AD",
+        "era": "New World Rise",
+        "title": "Judgment of Paris",
+        "description": "California wines defeat French wines in blind tasting, revolutionizing wine world and validating New World winemaking.",
+        "icon": "🇺🇸",
+        "color": "#B22222",
+        "position": 10
+    },
+    {
+        "id": "modern",
+        "year": "2000 AD",
+        "era": "Contemporary",
+        "title": "Global Wine Renaissance",
+        "description": "Technology meets tradition. Sustainable practices, precision viticulture, and climate-adapted varieties shape modern winemaking.",
+        "icon": "🌱",
+        "color": "#228B22",
+        "position": 11
+    }
+]

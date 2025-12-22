@@ -1,0 +1,142 @@
+[
+    {
+        "id": "bordeaux",
+        "name": "Bordeaux",
+        "country": "France",
+        "lat": 44.8378,
+        "lon": -0.5792,
+        "description": "Home to some of the world's most prestigious wines, Bordeaux is famous for its Cabernet Sauvignon and Merlot blends.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Château Margaux",
+            "Château Lafite Rothschild",
+            "Pétrus"
+        ]
+    },
+    {
+        "id": "tuscany",
+        "name": "Tuscany",
+        "country": "Italy",
+        "lat": 43.7711,
+        "lon": 11.2486,
+        "description": "Rolling hills and medieval towns define Tuscany, producing world-class Chianti and Brunello di Montalcino.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Chianti Classico",
+            "Brunello di Montalcino",
+            "Super Tuscans"
+        ]
+    },
+    {
+        "id": "napa",
+        "name": "Napa Valley",
+        "country": "USA",
+        "lat": 38.2975,
+        "lon": -122.2869,
+        "description": "California's premier wine region, known for bold Cabernet Sauvignon and innovative winemaking.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Opus One",
+            "Screaming Eagle",
+            "Caymus"
+        ]
+    },
+    {
+        "id": "rioja",
+        "name": "Rioja",
+        "country": "Spain",
+        "lat": 42.4650,
+        "lon": -2.4456,
+        "description": "Spain's most celebrated wine region, producing elegant Tempranillo-based wines.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Marqués de Riscal",
+            "La Rioja Alta",
+            "CVNE"
+        ]
+    },
+    {
+        "id": "barossa",
+        "name": "Barossa Valley",
+        "country": "Australia",
+        "lat": -34.5950,
+        "lon": 138.9633,
+        "description": "Australia's iconic region for bold, full-bodied Shiraz with rich heritage.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Penfolds Grange",
+            "Henschke Hill of Grace",
+            "Torbreck"
+        ]
+    },
+    {
+        "id": "champagne",
+        "name": "Champagne",
+        "country": "France",
+        "lat": 49.0420,
+        "lon": 4.0322,
+        "description": "The birthplace of sparkling wine, where only wines from this region can be called Champagne.",
+        "color": "#D4AF37",
+        "famous_wines": [
+            "Dom Pérignon",
+            "Krug",
+            "Cristal"
+        ]
+    },
+    {
+        "id": "douro",
+        "name": "Douro Valley",
+        "country": "Portugal",
+        "lat": 41.1621,
+        "lon": -7.5372,
+        "description": "Stunning terraced vineyards produce Port wine and exceptional dry reds.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Taylor's Port",
+            "Graham's",
+            "Quinta do Noval"
+        ]
+    },
+    {
+        "id": "marlborough",
+        "name": "Marlborough",
+        "country": "New Zealand",
+        "lat": -41.5150,
+        "lon": 173.9614,
+        "description": "World-renowned for vibrant, aromatic Sauvignon Blanc with tropical notes.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Cloudy Bay",
+            "Kim Crawford",
+            "Brancott Estate"
+        ]
+    },
+    {
+        "id": "mendoza",
+        "name": "Mendoza",
+        "country": "Argentina",
+        "lat": -32.8895,
+        "lon": -68.8458,
+        "description": "High-altitude vineyards at the foot of the Andes produce exceptional Malbec.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Catena Zapata",
+            "Achaval Ferrer",
+            "Bodega Norton"
+        ]
+    },
+    {
+        "id": "mosel",
+        "name": "Mosel",
+        "country": "Germany",
+        "lat": 49.9717,
+        "lon": 6.8661,
+        "description": "Steep slate slopes along the Mosel River create some of the world's finest Rieslings.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Egon Müller",
+            "Dr. Loosen",
+            "J.J. Prüm"
+        ]
+    }
+]

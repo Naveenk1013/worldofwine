@@ -1,0 +1,1036 @@
+[
+    {
+        "id": "bordeaux",
+        "name": "Bordeaux",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 44.8378,
+        "lon": -0.5792,
+        "description": "World benchmark for blended red wines based on Cabernet Sauvignon and Merlot; divided into Left Bank and Right Bank.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Château Margaux",
+            "Château Lafite Rothschild",
+            "Pétrus"
+        ],
+        "grapes": [
+            "Cabernet Sauvignon",
+            "Merlot",
+            "Cabernet Franc"
+        ]
+    },
+    {
+        "id": "burgundy",
+        "name": "Burgundy",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 47.0093,
+        "lon": 4.8462,
+        "description": "Terroir-driven region focused on single-vineyard expressions of Pinot Noir and Chardonnay.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Romanée-Conti",
+            "Montrachet"
+        ],
+        "grapes": [
+            "Pinot Noir",
+            "Chardonnay"
+        ]
+    },
+    {
+        "id": "champagne",
+        "name": "Champagne",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 49.0420,
+        "lon": 4.0322,
+        "description": "Cool-climate region producing traditional-method sparkling wines with high acidity.",
+        "color": "#D4AF37",
+        "famous_wines": [
+            "Dom Pérignon",
+            "Krug"
+        ],
+        "grapes": [
+            "Chardonnay",
+            "Pinot Noir",
+            "Pinot Meunier"
+        ]
+    },
+    {
+        "id": "rhone",
+        "name": "Rhône Valley",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 44.9333,
+        "lon": 4.8917,
+        "description": "Divided into Northern Rhône (Syrah-based) and Southern Rhône (Grenache blends).",
+        "color": "#722F37",
+        "famous_wines": [
+            "Hermitage",
+            "Châteauneuf-du-Pape"
+        ],
+        "grapes": [
+            "Syrah",
+            "Grenache",
+            "Mourvèdre"
+        ]
+    },
+    {
+        "id": "loire",
+        "name": "Loire Valley",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 47.3941,
+        "lon": 0.6848,
+        "description": "France’s most diverse region producing Sauvignon Blanc, Chenin Blanc, and Cabernet Franc.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Sancerre",
+            "Vouvray"
+        ],
+        "grapes": [
+            "Sauvignon Blanc",
+            "Chenin Blanc",
+            "Cabernet Franc"
+        ]
+    },
+    {
+        "id": "alsace",
+        "name": "Alsace",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 48.0794,
+        "lon": 7.3585,
+        "description": "Dry, aromatic white wines labeled by grape variety.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Riesling",
+            "Gewürztraminer"
+        ],
+        "grapes": [
+            "Riesling",
+            "Gewürztraminer",
+            "Pinot Gris"
+        ]
+    },
+    {
+        "id": "languedoc",
+        "name": "Languedoc-Roussillon",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 43.6108,
+        "lon": 3.8767,
+        "description": "Largest wine-producing area of France; Mediterranean climate.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Minervois",
+            "Fitou"
+        ],
+        "grapes": [
+            "Syrah",
+            "Grenache",
+            "Carignan"
+        ]
+    },
+    {
+        "id": "provence",
+        "name": "Provence",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 43.5297,
+        "lon": 5.4474,
+        "description": "Birthplace of dry rosé wines.",
+        "color": "#FFC0CB",
+        "famous_wines": [
+            "Côtes de Provence Rosé"
+        ],
+        "grapes": [
+            "Grenache",
+            "Cinsault",
+            "Mourvèdre"
+        ]
+    },
+    {
+        "id": "southwest-france",
+        "name": "Southwest France",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 44.4491,
+        "lon": 1.4366,
+        "description": "Historic region with indigenous varieties like Malbec and Tannat.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Cahors",
+            "Madiran"
+        ],
+        "grapes": [
+            "Malbec",
+            "Tannat"
+        ]
+    },
+    {
+        "id": "beaujolais",
+        "name": "Beaujolais",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 45.9905,
+        "lon": 4.7196,
+        "description": "Gamay-based wines known for freshness and early drinking.",
+        "color": "#A020F0",
+        "famous_wines": [
+            "Beaujolais Nouveau",
+            "Morgon"
+        ],
+        "grapes": [
+            "Gamay"
+        ]
+    },
+    {
+        "id": "corsica",
+        "name": "Corsica",
+        "country": "France",
+        "countryCode": "FR",
+        "flag": "🇫🇷",
+        "lat": 41.9192,
+        "lon": 8.7386,
+        "description": "Island wines influenced by Mediterranean climate and Italian grape heritage.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Patrimonio"
+        ],
+        "grapes": [
+            "Nielluccio",
+            "Sciaccarello",
+            "Vermentino"
+        ]
+    },
+    {
+        "id": "tuscany",
+        "name": "Tuscany",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 43.7711,
+        "lon": 11.2486,
+        "description": "Sangiovese heartland blending tradition and modern styles.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Chianti Classico",
+            "Brunello di Montalcino"
+        ],
+        "grapes": [
+            "Sangiovese"
+        ]
+    },
+    {
+        "id": "piedmont",
+        "name": "Piedmont",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 44.6961,
+        "lon": 8.0352,
+        "description": "Home of long-aging Nebbiolo wines.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Barolo",
+            "Barbaresco"
+        ],
+        "grapes": [
+            "Nebbiolo",
+            "Barbera",
+            "Dolcetto"
+        ]
+    },
+    {
+        "id": "veneto",
+        "name": "Veneto",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 45.4408,
+        "lon": 12.3155,
+        "description": "Famous for both sparkling and dried-grape wines.",
+        "color": "#D4AF37",
+        "famous_wines": [
+            "Prosecco",
+            "Amarone"
+        ],
+        "grapes": [
+            "Glera",
+            "Corvina",
+            "Garganega"
+        ]
+    },
+    {
+        "id": "lombardy",
+        "name": "Lombardy",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 45.5845,
+        "lon": 10.2198,
+        "description": "Produces Italy’s finest traditional-method sparkling wine.",
+        "color": "#D4AF37",
+        "famous_wines": [
+            "Franciacorta"
+        ],
+        "grapes": [
+            "Chardonnay",
+            "Pinot Nero",
+            "Pinot Bianco"
+        ]
+    },
+    {
+        "id": "emilia-romagna",
+        "name": "Emilia-Romagna",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 44.4949,
+        "lon": 11.3426,
+        "description": "Known for lightly sparkling, food-friendly wines.",
+        "color": "#A020F0",
+        "famous_wines": [
+            "Lambrusco"
+        ],
+        "grapes": [
+            "Lambrusco"
+        ]
+    },
+    {
+        "id": "marche",
+        "name": "Marche",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 43.6158,
+        "lon": 13.5189,
+        "description": "Adriatic region focused on Verdicchio.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Verdicchio dei Castelli di Jesi"
+        ],
+        "grapes": [
+            "Verdicchio"
+        ]
+    },
+    {
+        "id": "umbria",
+        "name": "Umbria",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 43.1107,
+        "lon": 12.3908,
+        "description": "Central Italian region with powerful whites.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Orvieto"
+        ],
+        "grapes": [
+            "Trebbiano",
+            "Grechetto",
+            "Sagrantino"
+        ]
+    },
+    {
+        "id": "abruzzo",
+        "name": "Abruzzo",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 42.4618,
+        "lon": 14.2161,
+        "description": "Mountain-influenced region producing robust reds.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Montepulciano d’Abruzzo"
+        ],
+        "grapes": [
+            "Montepulciano",
+            "Trebbiano"
+        ]
+    },
+    {
+        "id": "campania",
+        "name": "Campania",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 40.8518,
+        "lon": 14.2681,
+        "description": "Ancient Roman wine region with volcanic soils.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Taurasi",
+            "Fiano di Avellino"
+        ],
+        "grapes": [
+            "Aglianico",
+            "Fiano",
+            "Greco"
+        ]
+    },
+    {
+        "id": "puglia",
+        "name": "Puglia",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 41.1171,
+        "lon": 16.8719,
+        "description": "Warm southern region known for ripe, bold reds.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Primitivo"
+        ],
+        "grapes": [
+            "Primitivo",
+            "Negroamaro"
+        ]
+    },
+    {
+        "id": "basilicata",
+        "name": "Basilicata",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 40.6372,
+        "lon": 15.8021,
+        "description": "Mountainous region dominated by Aglianico.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Aglianico del Vulture"
+        ],
+        "grapes": [
+            "Aglianico"
+        ]
+    },
+    {
+        "id": "calabria",
+        "name": "Calabria",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 38.1144,
+        "lon": 15.6508,
+        "description": "Southern coastal wines with Greek heritage.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Cirò"
+        ],
+        "grapes": [
+            "Gaglioppo",
+            "Greco"
+        ]
+    },
+    {
+        "id": "sicily",
+        "name": "Sicily",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 37.5924,
+        "lon": 14.0154,
+        "description": "Largest Mediterranean island producing volcanic wines.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Etna Rosso"
+        ],
+        "grapes": [
+            "Nero d'Avola",
+            "Nerello Mascalese",
+            "Catarratto"
+        ]
+    },
+    {
+        "id": "sardinia",
+        "name": "Sardinia",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 39.2238,
+        "lon": 9.1217,
+        "description": "Island wines with Spanish influence.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Cannonau"
+        ],
+        "grapes": [
+            "Cannonau (Grenache)",
+            "Vermentino"
+        ]
+    },
+    {
+        "id": "trentino",
+        "name": "Trentino-Alto Adige",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 46.4950,
+        "lon": 11.3536,
+        "description": "Alpine region producing crisp aromatic whites.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Pinot Grigio"
+        ],
+        "grapes": [
+            "Pinot Grigio",
+            "Gewürztraminer",
+            "Lagrein"
+        ]
+    },
+    {
+        "id": "friuli",
+        "name": "Friuli-Venezia Giulia",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 46.0711,
+        "lon": 13.2346,
+        "description": "Italy’s premier white wine region.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Friulano"
+        ],
+        "grapes": [
+            "Friulano",
+            "Pinot Grigio"
+        ]
+    },
+    {
+        "id": "liguria",
+        "name": "Liguria",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 44.4056,
+        "lon": 8.9463,
+        "description": "Coastal wines with saline freshness.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Vermentino"
+        ],
+        "grapes": [
+            "Vermentino",
+            "Pigato"
+        ]
+    },
+    {
+        "id": "lazio",
+        "name": "Lazio",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 41.8902,
+        "lon": 12.4922,
+        "description": "Historic Roman wine region.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Frascati"
+        ],
+        "grapes": [
+            "Malvasia",
+            "Trebbiano"
+        ]
+    },
+    {
+        "id": "molise",
+        "name": "Molise",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 41.5603,
+        "lon": 14.6627,
+        "description": "Small, rustic region with traditional styles.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Tintilia"
+        ],
+        "grapes": [
+            "Tintilia"
+        ]
+    },
+    {
+        "id": "valle-daosta",
+        "name": "Valle d’Aosta",
+        "country": "Italy",
+        "countryCode": "IT",
+        "flag": "🇮🇹",
+        "lat": 45.7349,
+        "lon": 7.3131,
+        "description": "High-altitude alpine viticulture.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Petite Arvine"
+        ],
+        "grapes": [
+            "Petit Rouge",
+            "Petite Arvine"
+        ]
+    },
+    {
+        "id": "rioja",
+        "name": "Rioja",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 42.4650,
+        "lon": -2.4456,
+        "description": "Spain’s flagship region famous for oak-aged Tempranillo.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Rioja Reserva"
+        ],
+        "grapes": [
+            "Tempranillo",
+            "Garnacha"
+        ]
+    },
+    {
+        "id": "ribera-del-duero",
+        "name": "Ribera del Duero",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 41.6500,
+        "lon": -3.6833,
+        "description": "High-altitude powerhouse reds.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Vega Sicilia"
+        ],
+        "grapes": [
+            "Tempranillo (Tinto Fino)"
+        ]
+    },
+    {
+        "id": "priorat",
+        "name": "Priorat",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 41.2291,
+        "lon": 0.7672,
+        "description": "Slate soils producing dense, mineral wines.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Clos Mogador"
+        ],
+        "grapes": [
+            "Garnacha",
+            "Cariñena"
+        ]
+    },
+    {
+        "id": "catalonia",
+        "name": "Catalonia",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 41.5912,
+        "lon": 1.5209,
+        "description": "Home of Cava sparkling wine.",
+        "color": "#D4AF37",
+        "famous_wines": [
+            "Cava"
+        ],
+        "grapes": [
+            "Macabeo",
+            "Parellada",
+            "Xarel-lo"
+        ]
+    },
+    {
+        "id": "rias-baixas",
+        "name": "Rías Baixas",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 42.4046,
+        "lon": -8.7063,
+        "description": "Atlantic white wine region.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Albariño"
+        ],
+        "grapes": [
+            "Albariño"
+        ]
+    },
+    {
+        "id": "castilla-la-mancha",
+        "name": "Castilla-La Mancha",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 39.4699,
+        "lon": -3.5000,
+        "description": "Largest vineyard area in the world.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Airén"
+        ],
+        "grapes": [
+            "Airén",
+            "Tempranillo"
+        ]
+    },
+    {
+        "id": "navarra",
+        "name": "Navarra",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 42.6667,
+        "lon": -1.6667,
+        "description": "Known for quality rosé and reds.",
+        "color": "#FFC0CB",
+        "famous_wines": [
+            "Navarra Rosado"
+        ],
+        "grapes": [
+            "Garnacha",
+            "Tempranillo"
+        ]
+    },
+    {
+        "id": "aragon",
+        "name": "Aragon",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 41.6667,
+        "lon": -0.8333,
+        "description": "High-altitude Garnacha wines.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Campo de Borja"
+        ],
+        "grapes": [
+            "Garnacha"
+        ]
+    },
+    {
+        "id": "valencia",
+        "name": "Valencia",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 39.4699,
+        "lon": -0.3763,
+        "description": "Mediterranean reds and whites.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Bobal"
+        ],
+        "grapes": [
+            "Bobal",
+            "Monastrell"
+        ]
+    },
+    {
+        "id": "jumilla",
+        "name": "Jumilla",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 38.4727,
+        "lon": -1.3320,
+        "description": "Dry region known for Monastrell.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Jumilla Monastrell"
+        ],
+        "grapes": [
+            "Monastrell"
+        ]
+    },
+    {
+        "id": "yecla",
+        "name": "Yecla",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 38.6115,
+        "lon": -1.1167,
+        "description": "Small DO focused on powerful reds.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Yecla Monastrell"
+        ],
+        "grapes": [
+            "Monastrell"
+        ]
+    },
+    {
+        "id": "toro",
+        "name": "Toro",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 41.5204,
+        "lon": -5.3940,
+        "description": "Robust Tempranillo wines.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Toro Tinta de Toro"
+        ],
+        "grapes": [
+            "Tinta de Toro (Tempranillo)"
+        ]
+    },
+    {
+        "id": "bierzo",
+        "name": "Bierzo",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 42.5855,
+        "lon": -6.7083,
+        "description": "Cool-climate Mencía wines.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Bierzo Mencía"
+        ],
+        "grapes": [
+            "Mencía"
+        ]
+    },
+    {
+        "id": "galicia",
+        "name": "Galicia",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 42.8782,
+        "lon": -8.5448,
+        "description": "Rain-influenced white wine zone.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Godello"
+        ],
+        "grapes": [
+            "Godello",
+            "Albariño"
+        ]
+    },
+    {
+        "id": "andalusia",
+        "name": "Andalusia",
+        "country": "Spain",
+        "countryCode": "ES",
+        "flag": "🇪🇸",
+        "lat": 36.6865,
+        "lon": -6.1360,
+        "description": "Home of fortified wines.",
+        "color": "#D4AF37",
+        "famous_wines": [
+            "Sherry"
+        ],
+        "grapes": [
+            "Palomino",
+            "Pedro Ximénez"
+        ]
+    },
+    {
+        "id": "nashik",
+        "name": "Nashik",
+        "country": "India",
+        "countryCode": "IN",
+        "flag": "🇮🇳",
+        "lat": 19.9975,
+        "lon": 73.7898,
+        "description": "India’s wine capital with international-style wines.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Sula Sauvignon Blanc",
+            "Grover Zampa La Réserve"
+        ],
+        "grapes": [
+            "Sauvignon Blanc",
+            "Chenin Blanc",
+            "Shiraz"
+        ]
+    },
+    {
+        "id": "sangli",
+        "name": "Sangli",
+        "country": "India",
+        "countryCode": "IN",
+        "flag": "🇮🇳",
+        "lat": 16.8524,
+        "lon": 74.5815,
+        "description": "Emerging Maharashtra wine belt.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Local Shiraz"
+        ],
+        "grapes": [
+            "Shiraz",
+            "Cabernet Sauvignon"
+        ]
+    },
+    {
+        "id": "pune",
+        "name": "Pune",
+        "country": "India",
+        "countryCode": "IN",
+        "flag": "🇮🇳",
+        "lat": 18.5204,
+        "lon": 73.8567,
+        "description": "Cooler plateau climate supporting premium vineyards.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Reserve Cabernet"
+        ],
+        "grapes": [
+            "Cabernet Sauvignon",
+            "Shiraz"
+        ]
+    },
+    {
+        "id": "nandi-hills",
+        "name": "Nandi Hills",
+        "country": "India",
+        "countryCode": "IN",
+        "flag": "🇮🇳",
+        "lat": 13.3702,
+        "lon": 77.6835,
+        "description": "Karnataka’s flagship wine area.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Grover La Réserve"
+        ],
+        "grapes": [
+            "Cabernet Sauvignon",
+            "Shiraz"
+        ]
+    },
+    {
+        "id": "mosel",
+        "name": "Mosel",
+        "country": "Germany",
+        "countryCode": "DE",
+        "flag": "🇩🇪",
+        "lat": 49.9717,
+        "lon": 6.8661,
+        "description": "Steep slate slopes along the Mosel River create some of the world's finest Rieslings.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Egon Müller",
+            "Dr. Loosen",
+            "J.J. Prüm"
+        ],
+        "grapes": [
+            "Riesling"
+        ]
+    },
+    {
+        "id": "douro",
+        "name": "Douro Valley",
+        "country": "Portugal",
+        "countryCode": "PT",
+        "flag": "🇵🇹",
+        "lat": 41.1621,
+        "lon": -7.5372,
+        "description": "Stunning terraced vineyards produce Port wine and exceptional dry reds.",
+        "color": "#8B3A47",
+        "famous_wines": [
+            "Taylor's Port",
+            "Graham's",
+            "Quinta do Noval"
+        ],
+        "grapes": [
+            "Touriga Nacional",
+            "Touriga Franca"
+        ]
+    },
+    {
+        "id": "napa",
+        "name": "Napa Valley",
+        "country": "USA",
+        "countryCode": "US",
+        "flag": "🇺🇸",
+        "lat": 38.2975,
+        "lon": -122.2869,
+        "description": "California's premier wine region, known for bold Cabernet Sauvignon and innovative winemaking.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Opus One",
+            "Screaming Eagle",
+            "Caymus"
+        ],
+        "grapes": [
+            "Cabernet Sauvignon",
+            "Chardonnay"
+        ]
+    },
+    {
+        "id": "mendoza",
+        "name": "Mendoza",
+        "country": "Argentina",
+        "countryCode": "AR",
+        "flag": "🇦🇷",
+        "lat": -32.8895,
+        "lon": -68.8458,
+        "description": "High-altitude vineyards at the foot of the Andes produce exceptional Malbec.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Catena Zapata",
+            "Achaval Ferrer"
+        ],
+        "grapes": [
+            "Malbec"
+        ]
+    },
+    {
+        "id": "barossa",
+        "name": "Barossa Valley",
+        "country": "Australia",
+        "countryCode": "AU",
+        "flag": "🇦🇺",
+        "lat": -34.5950,
+        "lon": 138.9633,
+        "description": "Australia's iconic region for bold, full-bodied Shiraz with rich heritage.",
+        "color": "#722F37",
+        "famous_wines": [
+            "Penfolds Grange",
+            "Henschke Hill of Grace"
+        ],
+        "grapes": [
+            "Shiraz",
+            "Grenache"
+        ]
+    },
+    {
+        "id": "marlborough",
+        "name": "Marlborough",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "flag": "🇳🇿",
+        "lat": -41.5150,
+        "lon": 173.9614,
+        "description": "World-renowned for vibrant, aromatic Sauvignon Blanc with tropical notes.",
+        "color": "#9CAF88",
+        "famous_wines": [
+            "Cloudy Bay",
+            "Kim Crawford"
+        ],
+        "grapes": [
+            "Sauvignon Blanc",
+            "Pinot Noir"
+        ]
+    }
+]

@@ -1,0 +1,12 @@
+.liquid-splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    /* Just above background but below content and bottle */
+    pointer-events: none;
+    opacity: 0.6;
+    mix-blend-mode: screen;
+}

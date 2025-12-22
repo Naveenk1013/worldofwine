@@ -1,0 +1,396 @@
+/* Cellar.css */
+.cellar-page {
+    width: 100vw;
+    height: 100vh;
+    background: #050505;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 3D Background Container */
+.cellar-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: all;
+    /* Allow interaction with the sketchup model */
+}
+
+/* Overlay for UI, ensuring text is readable but model is interactable in gaps */
+.cellar-ui {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Let clicks pass through to 3D model where no UI exists */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+.cellar-header {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+    padding: 2rem;
+    padding-top: 120px;
+    /* Added clearance for navbar */
+    text-align: center;
+    pointer-events: auto;
+}
+
+.cellar-header h1 {
+    font-family: serif;
+    font-size: 3rem;
+    color: #d4af37;
+    margin: 0;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.cellar-header p {
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Bottom Controls */
+.cellar-controls {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    pointer-events: auto;
+}
+
+.cellar-btn {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: #d4af37;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cellar-btn:hover {
+    background: #d4af37;
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+/* Right Sidebar - Cellar Specimen (Copied from Vineyard) */
+.cellar-sidebar {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 220px;
+    z-index: 20;
+    pointer-events: auto;
+}
+
+.model-card {
+    background: rgba(0, 5, 10, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.model-card:hover {
+    transform: scale(1.05) translateX(-5px);
+    background: rgba(40, 10, 20, 0.7);
+    border-color: rgba(255, 215, 0, 0.4);
+    box-shadow: 0 12px 40px rgba(128, 0, 32, 0.2);
+}
+
+.model-preview {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 0.8rem;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.model-preview iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Pass clicks to card */
+}
+
+.model-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.model-label .icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.model-label span {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.model-label small {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-top: 0.2rem;
+}
+
+/* Modal Styling */
+.cellar-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    backdrop-filter: blur(5px);
+}
+
+.cellar-modal-content {
+    background: #1a1510;
+    /* Dark wood tone */
+    border: 1px solid #d4af37;
+    width: 90%;
+    max-width: 900px;
+    max-height: 85vh;
+    border-radius: 8px;
+    position: relative;
+    overflow-y: auto;
+    color: #ccc;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specific styling for guide content vs model content */
+.cellar-modal-content.guide-content {
+    padding: 3rem;
+    display: block;
+}
+
+.cellar-modal-content.model-content {
+    padding: 0;
+    overflow: hidden;
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #d4af37;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.close-modal:hover {
+    background: rgba(212, 175, 55, 0.2);
+    transform: rotate(90deg);
+}
+
+.cellar-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.cellar-section h3 {
+    color: #d4af37;
+    font-family: serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.cellar-section p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.oak-comparison {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.oak-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.oak-card h4 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.oak-card ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.oak-card li::before {
+    content: '•';
+    color: #d4af37;
+    margin-right: 0.5rem;
+}
+
+/* Sketchfab Full View */
+.sketchfab-embed-wrapper.full-version {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+
+.sketchfab-embed-wrapper.full-version iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Browse Collection Styles */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.wine-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.wine-card:hover {
+    background: rgba(40, 40, 40, 0.8);
+    border-color: #d4af37;
+    transform: translateY(-5px);
+}
+
+.wine-card h4 {
+    margin: 0.5rem 0 0.2rem 0;
+    color: #e0e0e0;
+}
+
+.wine-card small {
+    color: #888;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.wine-card .wine-type {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.wine-type.Red {
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+}
+
+.wine-type.White {
+    color: #fcfcd9;
+    border: 1px solid rgba(252, 252, 217, 0.2);
+}
+
+.wine-type.Sparkling {
+    color: #ffd700;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.wine-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.4;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.collection-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.filter-btn:hover {
+    color: #e0e0e0;
+}
+
+.filter-btn.active {
+    color: #d4af37;
+    border-bottom-color: #d4af37;
+}

@@ -6,40 +6,20 @@ import { forceSimulation, forceLink, forceManyBody, forceCenter } from 'd3-force
 import GrapeNode from './GrapeNode';
 
 // Separate component for Links to optimize re-rendering
-const GraphLinks = ({ links }) => {
+
+const GraphLinks = ({ links, activityRef }) => {
     const linesRef = useRef([]);
 
-    useFrame(() => {
-        // Imperatively update line positions
-        links.forEach((link, i) => {
-            if (linesRef.current[i]) {
-                const line = linesRef.current[i];
-                // Update the geometry points
-                // Note: zwei Line uses setPoints internally if we had access, but prop update is easier here
-                // However, to avoid react render, we might need a custom line or just let it be.
-                // For now, let's keep it simple. If we want 60fps links we need a different approach.
-                // But updating props will cause re-render of THIS component.
-
-                // Better approach with standard Line:
-                // We actually can't easily update declarative Line without re-rendering.
-                // But since we are okay with *some* overhead, let's try to update the geometry directly if possible.
-                // OR just accept that links might lag or we trigger a re-render.
-
-                // OPTIMIZATION: Use a single buffer geometry with segments.
-            }
-        });
-    });
-
-    // For this version, we will use a naive approach: Force re-render of lines is too heavy.
-    // Let's use a simpler custom Line implementation or just use segments.
-    // To keep it safe and working, we will stick to React updates for Links but optimize Nodes first.
-    // Re-rendering Lines 60fps is bad.
+    // ... (unused previous code comments removed for brevity)
 
     // START OF ACTUAL COMPONENT
     // We will construct the geometry ONCE and update attributes.
     const geometryRef = useRef();
 
     useFrame(() => {
+        // PERF: Only update if simulation is active (nodes are moving)
+        if (activityRef && !activityRef.current) return;
+
         if (geometryRef.current && links.length > 0) {
             const positions = geometryRef.current.attributes.position.array;
             // Safety check for array size mismatch
@@ -47,10 +27,8 @@ const GraphLinks = ({ links }) => {
 
             let i = 0;
             links.forEach(link => {
-                // Validate that source/target are objects with coordinates (d3 has processed them)
-                // and that coordinates are actual numbers
-                if (link.source && typeof link.source === 'object' &&
-                    link.target && typeof link.target === 'object' &&
+                // Validate that source/target are objects within range
+                if (link.source && link.target &&
                     Number.isFinite(link.source.x) && Number.isFinite(link.target.x)) {
 
                     positions[i++] = link.source.x;
@@ -60,19 +38,8 @@ const GraphLinks = ({ links }) => {
                     positions[i++] = link.target.y;
                     positions[i++] = link.target.z;
                 } else {
-                    // If invalid, zero out or keep previous (keeps buffer cursor consistent)
-                    // If we skip, we get misalignment. Better to fill with 0 or last known.
-                    // But simplest is to just ensure we don't write NaNs.
-                    // If we don't increment i, we might break the buffer structure if we have fixed size.
-                    // Actually, if we skip 'i' increment, we leave gaps.
-                    // The buffer expects a fixed number of segments.
-                    // Best fallback: Set to 0 if invalid to avoid crash, effectively hiding the link at origin.
-                    positions[i++] = 0;
-                    positions[i++] = 0;
-                    positions[i++] = 0;
-                    positions[i++] = 0;
-                    positions[i++] = 0;
-                    positions[i++] = 0;
+                    // Fallback for safety
+                    for (let j = 0; j < 6; j++) positions[i++] = 0;
                 }
             });
             geometryRef.current.attributes.position.needsUpdate = true;
@@ -126,6 +93,7 @@ const GrapeGraph = ({ data, onNodeClick }) => {
     }, [data]);
 
     const simulationRef = useRef(null);
+    const activityRef = useRef(true); // Tracks if simulation is active
 
     useEffect(() => {
         // Initialize simulation
@@ -135,7 +103,11 @@ const GrapeGraph = ({ data, onNodeClick }) => {
             .force('charge', forceManyBody().strength(-60)) // Increased repulsion
             .force('center', forceCenter());
 
+        // Set alphaMin to stop simulation when settled
+        sim.alphaMin(0.01);
+
         simulationRef.current = sim;
+        activityRef.current = true;
 
         // Re-heat simulation on data change with high alpha
         sim.alpha(1).restart();
@@ -145,9 +117,17 @@ const GrapeGraph = ({ data, onNodeClick }) => {
 
     useFrame(() => {
         if (simulationRef.current) {
-            simulationRef.current.tick();
+            // Only tick if alpha is high enough
+            if (simulationRef.current.alpha() > simulationRef.current.alphaMin()) {
+                simulationRef.current.tick();
+                activityRef.current = true;
+            } else {
+                activityRef.current = false;
+            }
         }
     });
+
+
 
     return (
         <group>
@@ -164,6 +144,7 @@ const GrapeGraph = ({ data, onNodeClick }) => {
             {/* key is essential to force re-creation of buffer geometry when link count changes, preventing WebGL buffer resize errors */}
             <GraphLinks
                 links={graphicalData.links}
+                activityRef={activityRef}
                 key={graphicalData.links.length}
             />
         </group>

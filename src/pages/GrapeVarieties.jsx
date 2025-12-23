@@ -4,8 +4,10 @@ import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import GrapeGraph from '../components/3d/Grapes/GrapeGraph';
 import grapeData from '../data/grape-varieties.json';
 import './GrapeVarieties.css';
+import useIsMobile from '../hooks/useIsMobile';
 
 const GrapeVarieties = () => {
+    const isMobile = useIsMobile();
     const [selectedGrape, setSelectedGrape] = useState(null);
     const [filterType, setFilterType] = useState('All');
     const [searchTerm, setSearchTerm] = useState('');
@@ -66,7 +68,7 @@ const GrapeVarieties = () => {
 
     return (
         <div className="grape-varieties-page">
-            <Canvas dpr={[1, 2]} gl={{ antialias: true, alpha: true }}>
+            <Canvas dpr={isMobile ? [1, 1] : [1, 2]} gl={{ antialias: true, alpha: true }}>
                 <PerspectiveCamera makeDefault position={[0, 0, 35]} />
                 <OrbitControls
                     enablePan={true}

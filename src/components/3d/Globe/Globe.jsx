@@ -5,9 +5,11 @@ import wineRegions from '../../../data/wine-regions.json';
 import RegionOutlineMap from './RegionOutlineMap';
 import RegionDetailPanel from './RegionDetailPanel';
 import './GlobeEnhanced.css';
+import useIsMobile from '../../../hooks/useIsMobile';
 
 const GlobeComponent = () => {
     const globeEl = useRef();
+    const isMobile = useIsMobile();
     const [selectedRegion, setSelectedRegion] = useState(null);
     const [hoveredRegion, setHoveredRegion] = useState(null);
     const [isRotating, setIsRotating] = useState(true);
@@ -275,7 +277,7 @@ const GlobeComponent = () => {
                     polygonsData={countryGeoJson.features || []}
                     polygonCapColor={() => 'rgba(0, 0, 0, 0)'} // Transparent face
                     polygonSideColor={() => 'rgba(0,0,0,0)'}    // Transparent side
-                    polygonStrokeColor={() => 'rgba(255, 255, 255, 0.2)'} // Subtle border
+                    polygonStrokeColor={() => isMobile ? 'rgba(255, 255, 255, 0.1)' : 'rgba(255, 255, 255, 0.2)'} // Subtle border
                     polygonAltitude={0.01} // Slight elevation to avoid z-fighting
 
                     // HTML Markers (Flags)
@@ -284,7 +286,7 @@ const GlobeComponent = () => {
                         const el = document.createElement('div');
                         el.innerHTML = `
                             <div class="flag-marker" style="
-                              font-size: 24px;
+                              font-size: ${isMobile ? '18px' : '24px'};
                               cursor: pointer;
                               filter: drop-shadow(0 0 4px ${d.color});
                               transition: transform 0.3s ease, filter 0.3s ease;
@@ -314,7 +316,7 @@ const GlobeComponent = () => {
                     }}
 
                     atmosphereColor="#D4AF37"
-                    atmosphereAltitude={0.15}
+                    atmosphereAltitude={isMobile ? 0.05 : 0.15}
                     animateIn={true}
                     waitForGlobeReady={true}
                 />

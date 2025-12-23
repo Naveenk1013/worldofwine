@@ -29,7 +29,7 @@ const GrapeCluster = ({ position, color }) => (
     </group>
 );
 
-const Vine = ({ position, season }) => {
+const Vine = ({ position, season, isMobile }) => {
     // Determine vine properties based on season
     const properties = useMemo(() => {
         switch (season) {
@@ -49,7 +49,7 @@ const Vine = ({ position, season }) => {
     return (
         <group position={position}>
             {/* Main Trunk */}
-            <mesh position={[0, 0.75, 0]} castShadow>
+            <mesh position={[0, 0.75, 0]} castShadow={!isMobile}>
                 <cylinderGeometry args={[0.05, 0.08, 1.5, 8]} />
                 <meshStandardMaterial color="#5C4033" />
             </mesh>
@@ -86,7 +86,7 @@ const Vine = ({ position, season }) => {
     );
 };
 
-const VineRow = ({ position, length = 10, season }) => {
+const VineRow = ({ position, length = 10, season, isMobile }) => {
     // Create an array of positions for vines in the row
     const vines = useMemo(() => {
         const arr = [];
@@ -99,7 +99,7 @@ const VineRow = ({ position, length = 10, season }) => {
     return (
         <group position={position}>
             {vines.map((x, i) => (
-                <Vine key={i} position={[x, 0, 0]} season={season} />
+                <Vine key={i} position={[x, 0, 0]} season={season} isMobile={isMobile} />
             ))}
         </group>
     );

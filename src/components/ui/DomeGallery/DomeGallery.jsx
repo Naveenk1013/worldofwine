@@ -5,10 +5,10 @@ import grapeData from '../../../data/grape-varieties.json'; // Import Data
 import './DomeGallery.css';
 
 const DEFAULTS = {
-    maxVerticalRotationDeg: 15, // Increased rotation allow
+    maxVerticalRotationDeg: 15,
     dragSensitivity: 20,
     enlargeTransitionMs: 300,
-    segments: 35
+    segments: 36 // Use even number for cleaner division
 };
 
 const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
@@ -34,7 +34,16 @@ const getTypeColor = (type) => {
 };
 
 function buildItems(pool, seg) {
-    const xCols = Array.from({ length: seg }, (_, i) => -37 + i * 2);
+    // Calculate columns: Item width is 2 units.
+    // To fit 360 degrees (seg units), we can have seg/2 columns.
+    const cols = Math.floor(seg / 2);
+
+    // Generate x offsets centered around the sphere
+    // Range roughly [-seg/2, seg/2]
+    const xCols = Array.from({ length: cols }, (_, i) => {
+        return (-seg / 2) + (i * 2);
+    });
+
     const evenYs = [-4, -2, 0, 2, 4]; // Vertical spread
     const oddYs = [-3, -1, 1, 3, 5];
 
@@ -66,7 +75,7 @@ function computeItemBaseRotation(offsetX, offsetY, sizeX, sizeY, segments) {
 }
 
 export default function DomeGallery({
-    images = grapeData, // Default to grapeData
+    images = (grapeData || []), // Safely fallback to empty array
     fit = 0.5,
     fitBasis = 'auto',
     minRadius = 600,

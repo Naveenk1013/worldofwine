@@ -10,6 +10,7 @@ const GrapeVarieties = () => {
     const isMobile = useIsMobile();
     const [selectedGrape, setSelectedGrape] = useState(null);
     const [filterType, setFilterType] = useState('All');
+    const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'list'
     const [searchTerm, setSearchTerm] = useState('');
     const [sortBy, setSortBy] = useState('Name'); // Name, Origin, Type
 
@@ -137,6 +138,23 @@ const GrapeVarieties = () => {
                                 <option value="Type">Type</option>
                             </select>
                         </div>
+
+                        <div className="view-toggles">
+                            <button
+                                className={`view-btn ${viewMode === 'grid' ? 'active' : ''}`}
+                                onClick={() => setViewMode('grid')}
+                                title="Grid View"
+                            >
+                                ⊞
+                            </button>
+                            <button
+                                className={`view-btn ${viewMode === 'list' ? 'active' : ''}`}
+                                onClick={() => setViewMode('list')}
+                                title="List View"
+                            >
+                                ☰
+                            </button>
+                        </div>
                     </div>
                 </header>
 
@@ -147,31 +165,59 @@ const GrapeVarieties = () => {
                         {/* Mobile toggle logic removed as this is now main content */}
                     </div>
 
-                    <div className="grape-grid">
-                        {filteredData.map(grape => (
-                            <div
-                                key={grape.id}
-                                className={`grape-card ${selectedGrape?.id === grape.id ? 'active' : ''}`}
-                                onClick={() => {
-                                    setSelectedGrape(grape);
-                                }}
-                            >
-                                <div className="card-header">
+                    {viewMode === 'grid' ? (
+                        <div className="grape-grid">
+                            {filteredData.map(grape => (
+                                <div
+                                    key={grape.id}
+                                    className={`grape-card ${selectedGrape?.id === grape.id ? 'active' : ''}`}
+                                    onClick={() => {
+                                        setSelectedGrape(grape);
+                                    }}
+                                >
+                                    <div className="card-header">
+                                        <span
+                                            className="grape-dot"
+                                            style={{
+                                                backgroundColor:
+                                                    grape.type === 'Red' ? '#58111A' :
+                                                        grape.type === 'White' ? '#F2E6B6' :
+                                                            grape.type === 'Rosé' ? '#F8B8B8' : '#ccc'
+                                            }}
+                                        ></span>
+                                        <span className="grape-name">{grape.name}</span>
+                                    </div>
+                                    <span className="grape-origin">{grape.origin}</span>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="grape-list-layout">
+                            {filteredData.map(grape => (
+                                <div
+                                    key={grape.id}
+                                    className={`grape-directory-row ${selectedGrape?.id === grape.id ? 'active' : ''}`}
+                                    onClick={() => {
+                                        setSelectedGrape(grape);
+                                    }}
+                                >
                                     <span
-                                        className="grape-dot"
+                                        className="row-dot"
                                         style={{
                                             backgroundColor:
                                                 grape.type === 'Red' ? '#58111A' :
                                                     grape.type === 'White' ? '#F2E6B6' :
-                                                        grape.type === 'Rosé' ? '#F8B8B8' : '#ccc'
+                                                        grape.type === 'Rosé' ? '#F8B8B8' : '#ccc',
+                                            border: `1px solid ${grape.type === 'Red' ? '#722F37' : '#fff'}`
                                         }}
                                     ></span>
-                                    <span className="grape-name">{grape.name}</span>
+                                    <span className="row-name">{grape.name}</span>
+                                    <span className="row-type">{grape.type}</span>
+                                    <span className="row-origin">{grape.origin}</span>
                                 </div>
-                                <span className="grape-origin">{grape.origin}</span>
-                            </div>
-                        ))}
-                    </div>
+                            ))}
+                        </div>
+                    )}
 
                     {filteredData.length === 0 && (
                         <div className="no-results">No grapes found matching "{searchTerm}"</div>
